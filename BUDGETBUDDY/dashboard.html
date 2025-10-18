@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BUD Dashboard</title>
+  <link rel="icon" href="images/bud-favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/BUD-logo.svg" alt="BUD Logo" class="logo-img">
+      <span class="brand">BUD</span>
+    </div>
+    <div id="user-info" class="nav-links">
+      <span id="user-email"></span>
+      <button id="logout-btn" class="btn-secondary">Logout</button>
+    </div>
+  </header>
+
+  <main style="padding:4rem;">
+    <h1>Your Dashboard</h1>
+    <p>This area will contain user-specific budgets and tracking.</p>
+  </main>
+
+  <script type="module">
+    import { getSession, logout, getProfile } from './auth.js';
+
+    (async () => {
+      const s = await getSession();
+      if (!s) {
+        // not logged in
+        window.location.href = 'index.html';
+        return;
+      }
+
+      const userId = s.user.id;
+      const profileRes = await getProfile(userId);
+      const emailEl = document.getElementById('user-email');
+      if (profileRes && profileRes.data) {
+        emailEl.textContent = profileRes.data.full_name || profileRes.data.email || s.user.email;
+      } else {
+        emailEl.textContent = s.user.email || 'Logged in';
+      }
+    })();
+
+    document.getElementById('logout-btn').addEventListener('click', async () => {
+      const res = await logout();
+      if (res && res.error) {
+        alert('Logout error: ' + res.error.message);
+      } else {
+        window.location.href = 'index.html';
+      }
+    });
+  </script>
+</body>
+</html>

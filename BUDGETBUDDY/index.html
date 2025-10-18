@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BUD</title>
+  <link rel="icon" href="images/bud-favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/BUD-logo.svg" alt="BUD Logo" class="logo-img">
+      <span class="brand">BUD</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#cta">Get Started</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero reveal">
+    <div class="hero-content">
+      <h1>Take Control of Your Money, Effortlessly</h1>
+      <p>Budget, save, and track your expenses—all in one place.</p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn-primary" id="open-signup">Get Started</a>
+        <a href="#about" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-illustration">
+      <!-- Inline dashboard SVG placeholder (ensures the image renders even if external files fail to load) -->
+  <svg class="dashboard-illustration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="BUD dashboard preview">
+        <defs>
+          <linearGradient id="bggrad" x1="0" x2="1">
+            <stop offset="0" stop-color="#e8f9f2"/>
+            <stop offset="1" stop-color="#fdfefe"/>
+          </linearGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#bggrad)" rx="20"/>
+        <g transform="translate(60,60)">
+          <rect x="0" y="0" width="1080" height="680" rx="18" fill="#fff" stroke="#eef6f3"/>
+          <rect x="32" y="28" width="520" height="120" rx="10" fill="#f6fffa" stroke="#e6f3ee"/>
+          <rect x="32" y="168" width="520" height="320" rx="10" fill="#fbfdff" stroke="#eef2f6"/>
+          <rect x="572" y="28" width="496" height="460" rx="10" fill="#fbfdff" stroke="#eef2f6"/>
+          <!-- small cards -->
+          <g transform="translate(44,44)">
+            <rect x="0" y="0" width="120" height="48" rx="8" fill="#dff7ec" stroke="#c8f0dd"/>
+            <rect x="148" y="0" width="120" height="48" rx="8" fill="#dff7ec" stroke="#c8f0dd"/>
+            <rect x="296" y="0" width="120" height="48" rx="8" fill="#dff7ec" stroke="#c8f0dd"/>
+          </g>
+          <!-- chart lines -->
+          <polyline points="80,560 220,480 360,520 500,420 640,480 780,360" fill="none" stroke="#00b894" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+          <text x="60" y="620" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#2d3436" font-weight="600">BUD Dashboard Preview</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT (moved up below hero) -->
+  <section id="about" class="about reveal">
+    <div class="about-inner">
+  <h2>About BUD</h2>
+  <p>BUD helps people save smarter and build better financial habits by combining simple budgeting tools with habit-tracking and tailored insights.</p>
+      <p>We help users track expenses, visualize progress toward goals, and create repeatable saving behaviors that stick.</p>
+      <p>Our mission is to make financial wellness approachable and personalized — empowering everyone to plan, save, and thrive.</p>
+    </div>
+  </section>
+
+  <!-- APP PREVIEW -->
+  <section id="app-preview" class="app-preview reveal">
+    <div class="preview-inner">
+  <div class="preview-image">
+  <img src="images/dashboard.svg" alt="BUD App Dashboard Preview">
+      </div>
+      <div class="preview-captions">
+        <h3>App Preview</h3>
+        <ul>
+          <li>Track your expenses</li>
+          <li>Visualize your savings</li>
+          <li>Stay consistent with smart habits</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features reveal">
+  <h2>Features That Make BUD Awesome</h2>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <img src="icons/wallet.svg" alt="Smart Budgeting Icon">
+        <h3>Smart Budgeting</h3>
+        <p>Set budgets for each category and stay on track effortlessly.</p>
+      </div>
+      <div class="feature-card">
+        <img src="icons/piggy-bank.svg" alt="Savings Goals Icon">
+        <h3>Savings Goals</h3>
+        <p>Visualize your savings and hit your goals faster.</p>
+      </div>
+      <div class="feature-card">
+        <img src="icons/graph.svg" alt="Expense Tracking Icon">
+        <h3>Expense Tracking</h3>
+        <p>Track every expense and see where your money goes.</p>
+      </div>
+      <div class="feature-card">
+        <img src="icons/graph.svg" alt="Insights Icon">
+        <h3>Savings & Insights</h3>
+        <p>Provides insights into your current savings, expenses, and spending habits.</p>
+      </div>
+      <div class="feature-card">
+        <img src="icons/bell.svg" alt="Smart Reminders Icon">
+        <h3>Smart Reminders</h3>
+        <p>Never miss a bill or payment with smart notifications.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- CTA -->
+  <section id="cta" class="cta reveal">
+    <h2>Ready to take control of your finances?</h2>
+    <a href="#features" class="btn-primary cta-btn" id="open-login">Start Budgeting Now</a>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials reveal">
+    <h2>What our users say</h2>
+    <div class="testimony-cards">
+  <div class="testimony-card">“BUD helped me save for my first car!” — Alex</div>
+      <div class="testimony-card">“Tracking my expenses has never been easier.” — Priya</div>
+      <div class="testimony-card">“I finally stick to my savings goals.” — Jordan</div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section id="bottom-cta" class="bottom-cta reveal">
+    <div class="bottom-cta-inner">
+  <h2>Start your saving journey with BUD today.</h2>
+      <div class="bottom-cta-actions">
+        <a href="#" class="btn-primary" id="open-signup-2">Get Started</a>
+        <a href="#about" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer reveal">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-social">
+        <span class="social-placeholder">[Twitter]</span>
+        <span class="social-placeholder">[LinkedIn]</span>
+        <span class="social-placeholder">[GitHub]</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FOOTER -->
+  <footer class="footer reveal">
+  <p>© 2025 BUD. All rights reserved.</p>
+  </footer>
+
+  <!-- SMOOTH SCROLL + REVEAL -->
+  <!-- Modals -->
+  <div class="modal" id="signup-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="signup-title">
+      <button class="modal-close" aria-label="Close" data-close>&times;</button>
+      <h3 id="signup-title">Create your account</h3>
+      <form id="signup-form">
+        <label>
+          Name
+          <input name="name" type="text" required>
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required>
+        </label>
+        <label>
+          Password
+          <input name="password" type="password" required>
+        </label>
+        <div class="modal-actions">
+          <button type="submit" class="btn-primary">Sign up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="login-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="login-title">
+      <button class="modal-close" aria-label="Close" data-close>&times;</button>
+  <h3 id="login-title">Log in to BUD</h3>
+      <form id="login-form">
+        <label>
+          Email
+          <input name="email" type="email" required>
+        </label>
+        <label>
+          Password
+          <input name="password" type="password" required>
+        </label>
+        <div class="modal-actions">
+          <button type="submit" class="btn-primary">Log in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    // smooth scroll for anchor links (preserve existing behavior)
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        // allow modal triggers to override default
+        if (a.id === 'open-signup' || a.id === 'open-login') return;
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // reveal animation (unchanged)
+    const revealEls = document.querySelectorAll('.reveal');
+    function reveal() {
+      for (const el of revealEls) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) el.classList.add('active');
+      }
+    }
+    window.addEventListener('scroll', reveal);
+    window.addEventListener('load', () => setTimeout(reveal, 120));
+
+    // Modal helpers
+    function openModal(modal) {
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      // trap focus could be added later
+    }
+    function closeModal(modal) {
+      modal.classList.remove('active');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    // Toast helper
+    const toastEl = document.getElementById('toast');
+    function showToast(message, timeout = 2200) {
+      toastEl.textContent = message;
+      toastEl.classList.add('show');
+      setTimeout(() => toastEl.classList.remove('show'), timeout);
+    }
+
+    // Wire up triggers
+    const signupModal = document.getElementById('signup-modal');
+    const loginModal = document.getElementById('login-modal');
+
+    const openSignup = document.getElementById('open-signup');
+    if (openSignup) openSignup.addEventListener('click', e => {
+      e.preventDefault(); openModal(signupModal);
+    });
+
+    const openSignup2 = document.getElementById('open-signup-2');
+    if (openSignup2) openSignup2.addEventListener('click', e => {
+      e.preventDefault(); openModal(signupModal);
+    });
+
+    const openLogin = document.getElementById('open-login');
+    if (openLogin) openLogin.addEventListener('click', e => {
+      e.preventDefault(); openModal(loginModal);
+    });
+
+    // close buttons
+    document.querySelectorAll('.modal [data-close]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        const modal = e.target.closest('.modal');
+        if (modal) closeModal(modal);
+      });
+    });
+
+    // close on overlay click
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', e => {
+        if (e.target === modal) closeModal(modal);
+      });
+    });
+
+    // form handlers (show coming soon)
+    // Placeholder handlers now replaced by module-based auth wiring below
+
+    // keyboard escape to close modals
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal.active').forEach(m => closeModal(m));
+      }
+    });
+
+    // Generic placeholder actions for other UI buttons
+    document.querySelectorAll('.btn-primary, .btn-secondary, .cta-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        // ignore modal triggers and anchor smooth-scroll links
+        const id = btn.id;
+        const href = btn.getAttribute('href');
+        if (id === 'open-signup' || id === 'open-login') return;
+        if (href && href.startsWith('#')) return; // leave anchor links alone
+        e.preventDefault();
+        showToast('Feature coming soon!');
+      });
+    });
+  </script>
+
+  <script type="module">
+    import { signup, login, logout, onAuthChange, getSession } from './auth.js';
+
+    // DOM helpers
+    const signupForm = document.getElementById('signup-form');
+    const loginForm = document.getElementById('login-form');
+
+    if (signupForm) {
+      signupForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const name = form.name ? form.name.value : null;
+        const email = form.email.value;
+        const password = form.password.value;
+        const res = await signup(email, password, name);
+        if (res.error) {
+          showToast('Signup error: ' + (res.error.message || res.error));
+        } else {
+          showToast('Signup successful — please check your email for confirmation if required.');
+          // if profile insert had an error, show it
+          if (res.insertError) showToast('Profile insert error: ' + (res.insertError.message || res.insertError));
+          // close modal
+          document.getElementById('signup-modal').classList.remove('active');
+        }
+      });
+    }
+
+    if (loginForm) {
+      loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        const res = await login(email, password);
+        if (res.error) {
+          alert('Login error: ' + res.error.message);
+        } else {
+          // redirect to dashboard
+          window.location.href = 'dashboard.html';
+        }
+      });
+    }
+
+    // Persisted auth state (redirect if logged in or out can be handled on dashboard)
+    onAuthChange((event, session) => {
+      console.log('Auth change', event, session);
+    });
+
+    // Optional: if user already logged in, you could redirect to dashboard automatically
+    (async () => {
+      const s = await getSession();
+      if (s) {
+        console.log('User session exists');
+      }
+    })();
+  </script>
+</body>
+</html>

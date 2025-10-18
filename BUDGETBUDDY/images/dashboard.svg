@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#e8f9f2"/>
+      <stop offset="1" stop-color="#fdfefe"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <g transform="translate(80,80)">
+    <rect x="0" y="0" width="1040" height="600" rx="20" fill="#fff" stroke="#e6eef0"/>
+    <rect x="24" y="24" width="500" height="120" rx="8" fill="#f6fffa" stroke="#e6f3ee"/>
+    <rect x="24" y="160" width="500" height="240" rx="8" fill="#f8fafc" stroke="#eef2f6"/>
+    <rect x="544" y="24" width="472" height="376" rx="8" fill="#fbfdff" stroke="#eef2f6"/>
+    <g fill="#dff7ec" stroke="#bfeede" transform="translate(44,44)">
+      <rect x="0" y="0" width="120" height="48" rx="6"/>
+      <rect x="140" y="0" width="120" height="48" rx="6"/>
+      <rect x="280" y="0" width="120" height="48" rx="6"/>
+    </g>
+  <text x="60" y="460" font-family="Inter, system-ui, sans-serif" font-size="28" fill="#2d3436">BUD Dashboard Placeholder</text>
+  </g>
+</svg>

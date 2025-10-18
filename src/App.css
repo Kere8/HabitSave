@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F7F9FB;
+  color: #1F2933;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
