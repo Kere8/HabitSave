@@ -51,6 +51,9 @@ h3 { font-size: 1.125rem; margin: 0 0 0.5rem 0; }
   gap: 0.6rem;
 }
 
+/* Ensure logo group sits nicely in navbar and footer and remains vertically centered */
+.header-logo, .footer-logo { display:flex; align-items:center; gap:0.6rem; }
+
 /* Logo image: fixed height for consistent alignment, auto width */
 .logo-img {
   height: 56px; /* slightly larger for stronger presence */
@@ -58,6 +61,9 @@ h3 { font-size: 1.125rem; margin: 0 0 0.5rem 0; }
   display: block;
   object-fit: contain;
   transition: transform 0.25s ease, filter 0.25s ease;
+  /* Make sure SVGs render sharply on high-DPI screens */
+  shape-rendering: geometricPrecision;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .logo-img:hover { transform: scale(1.04); filter: brightness(1.03); }
@@ -68,6 +74,9 @@ h3 { font-size: 1.125rem; margin: 0 0 0.5rem 0; }
   color: var(--text);
   letter-spacing: -0.01em;
 }
+
+/* Footer logo sizing (slightly smaller) */
+.footer .logo-img { height: 44px; }
 
 /* Ensure images don't distort site-wide */
 img { max-width: 100%; height: auto; display: block; }
